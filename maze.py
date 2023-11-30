@@ -71,10 +71,8 @@ class Maze():
             
         self.solution = None
 
-    # همسایه برمیگردونه و اکشن میده
     def neighbors(self, state):
         row, col = state
-        # موقعیت های حرکتو میگه
         candidates = [
             ("up", (row - 1, col)),
             ("down", (row + 1, col)),
